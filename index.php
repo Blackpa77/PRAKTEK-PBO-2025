@@ -17,7 +17,7 @@ $waktu = date("Y-m-d H:i:s");
 <body>
     <div class="container">
         <h1>WELCOME TO MIE AYAM WEBSITE</h1>
-        <p>Semoga dengan adanya wesbite ini para mie ayam diseluruh dunia kesejahteraannya meningkat dan menjadi lebih baiik <strong><?= htmlspecialchars($nama) ?></strong></p>
+        <p>Semoga dengan adanya wesbite ini para mie ayam diseluruh dunia kesejahteraannya meningkat dan menjadi lebih baiik, SEMOGA APA YANG DISMEOGAKAN TERCAPAI <strong><?= htmlspecialchars($nama) ?></strong></p>
         <div class="box">
             <p>Waktu server: <code><?= $waktu ?></code></p>
             <p>Dijalankan di <strong>Docker</strong> di Hugging Face Spaces ✅</p>
