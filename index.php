@@ -16,7 +16,7 @@ $waktu = date("Y-m-d H:i:s");
 </head>
 <body>
     <div class="container">
-        <h1>WELCOME TO MIE bakso WEBSITE</h1>
+        <h1>WELCOME TO MIE bakso popon WEBSITE</h1>
         <p>Semoga dengan adanya wesbite ini para mie ayam diseluruh dunia kesejahteraannya meningkat dan menjadi lebih baiik, SEMOGA APA YANG DISMEOGAKAN TERCAPAI <strong><?= htmlspecialchars($nama) ?></strong></p>
         <div class="box">
             <p>Waktu server: <code><?= $waktu ?></code></p>
