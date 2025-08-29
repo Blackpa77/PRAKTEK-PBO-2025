@@ -7,14 +7,14 @@ $waktu = date("Y-m-d H:i:s");
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Website PHP di Hugging Face</title>
+    <title>Website Paundra</title>
     <style>
         body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
         .container { max-width: 600px; margin: 0 auto; }
         .box { background: #f0f8ff; padding: 20px; border-radius: 10px; margin-top: 20px; }
         ul { list-style-type: none; padding: 0; }
         li { margin: 10px 0; }
-        a { background: #007bff; color: white; padding: 10px 15px; border-radius: 5px; text-decoration: none; display: inline-block; }
+        a { background: #007bff; color: white; padding: 10px 15px; border-radius: 5px; text-decoration: none; display: inline-block; width: 150px; }
         a:hover { background: #0056b3; }
     </style>
 </head>
@@ -24,8 +24,9 @@ $waktu = date("Y-m-d H:i:s");
         <p>Semoga dengan adanya wesbite ini para mie ayam diseluruh dunia kesejahteraannya meningkat dan menjadi lebih baiik, SEMOGA APA YANG DISMEOGAKAN TERCAPAI <strong><?= htmlspecialchars($nama) ?></strong></p>
         
         <div class="box">
-            <h2>🔗 Daftar Latihan</h2>
+            <h2>🔗 Navigasi Halaman</h2>
             <ul>
+                <li><a href="home.php">Buka Halaman Home</a></li>
                 <li><a href="Latihan1.php">Buka Latihan 1</a></li>
                 <li><a href="Latihan2.php">Buka Latihan 2</a></li>
                 <li><a href="Latihan3.php">Buka Latihan 3</a></li>
@@ -35,8 +36,6 @@ $waktu = date("Y-m-d H:i:s");
         
         <div class="box">
             <p>Waktu server: <code><?= $waktu ?></code></p>
-            <p>Dijalankan di <strong>Docker</strong> di Hugging Face Spaces ✅</p>
-            
         </div>
  </div>
 </body>
