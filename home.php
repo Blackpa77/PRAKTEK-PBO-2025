@@ -8,4 +8,4 @@
 <body>
     
 </body>
-</html><h1>Uji coba halaman home website .</h1> 
+</html><h1>Anda sekarang berada di halaman home, tidak ada apa disini.</h1> 
