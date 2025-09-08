@@ -73,15 +73,17 @@ class Segitiga
     /**
      * Menampilkan semua informasi segitiga dalam format yang sudah ditentukan.
      */
-    public function tampilkanInfo(): void
-    {
-        echo "===== INFORMASI SEGITIGA ======\n";
-        echo "Alas : " . $this->alas . "\n";
-        echo "Tinggi : " . $this->tinggi . "\n";
-        echo "Sisi : " . $this->sisi1 . ", " . $this->sisi2 . ", " . $this->sisi3 . "\n";
-        echo "Luas : " . $this->hitungLuas() . "\n";
-        echo "Keliling : " . $this->hitungKeliling() . "\n";
-        echo "Jenis: " . $this->cekJenis() . "\n";
-        echo "===============================\n";
-    }
+public function tampilkanInfo(): void
+{
+    echo "<pre>"; // Tambahkan baris ini
+    echo "===== INFORMASI SEGITIGA ======\n";
+    echo "Alas : " . $this->alas . "\n";
+    echo "Tinggi : " . $this->tinggi . "\n";
+    echo "Sisi : " . $this->sisi1 . ", " . $this->sisi2 . ", " . $this->sisi3 . "\n";
+    echo "Luas : " . $this->hitungLuas() . "\n";
+    echo "Keliling : " . $this->hitungKeliling() . "\n";
+    echo "Jenis: " . $this->cekJenis() . "\n";
+    echo "===============================\n";
+    echo "</pre>"; // Tambahkan baris ini
+}
 }
