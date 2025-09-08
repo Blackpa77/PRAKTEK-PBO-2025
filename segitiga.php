@@ -66,10 +66,12 @@ class Segitiga
         }
     }
 
-
+    /**
+     * Menampilkan semua informasi segitiga dalam format yang sudah ditentukan.
+     */
 public function tampilkanInfo(): void
 {
-    echo "<pre>";
+    echo "<pre>"; // Tambahkan baris ini
     echo "===== INFORMASI SEGITIGA ======\n";
     echo "Alas : " . $this->alas . "\n";
     echo "Tinggi : " . $this->tinggi . "\n";
@@ -78,6 +80,6 @@ public function tampilkanInfo(): void
     echo "Keliling : " . $this->hitungKeliling() . "\n";
     echo "Jenis: " . $this->cekJenis() . "\n";
     echo "===============================\n";
-    echo "</pre>";
+    echo "</pre>"; // Tambahkan baris ini
 }
 }
