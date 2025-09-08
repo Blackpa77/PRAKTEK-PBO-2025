@@ -8,4 +8,4 @@
 <body>
     
 </body>
-</html><h1>Anda sekarang berada di halaman home, tidak ada apa disini.</h1> 
+</html><h3> Ini adalah bagian home, silahkan keluar halaman ini untuk kembali ke halaman index.</h3> 
