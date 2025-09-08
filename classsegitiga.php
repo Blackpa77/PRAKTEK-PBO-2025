@@ -1,10 +1,6 @@
 <?php
 
-/**
- * Class Segitiga
- * Merepresentasikan sebuah objek segitiga dengan properti dan metode
- * untuk menghitung luas, keliling, dan menentukan jenisnya.
- */
+
 class Segitiga
 {
     // Properti privat untuk menyimpan data segitiga
@@ -70,18 +66,18 @@ class Segitiga
         }
     }
 
-    /**
-     * Menampilkan semua informasi segitiga dalam format yang sudah ditentukan.
-     */
-    public function tampilkanInfo(): void
-    {
-        echo "===== INFORMASI SEGITIGA ======\n";
-        echo "Alas : " . $this->alas . "\n";
-        echo "Tinggi : " . $this->tinggi . "\n";
-        echo "Sisi : " . $this->sisi1 . ", " . $this->sisi2 . ", " . $this->sisi3 . "\n";
-        echo "Luas : " . $this->hitungLuas() . "\n";
-        echo "Keliling : " . $this->hitungKeliling() . "\n";
-        echo "Jenis: " . $this->cekJenis() . "\n";
-        echo "===============================\n";
-    }
+
+public function tampilkanInfo(): void
+{
+    echo "<pre>";
+    echo "===== INFORMASI SEGITIGA ======\n";
+    echo "Alas : " . $this->alas . "\n";
+    echo "Tinggi : " . $this->tinggi . "\n";
+    echo "Sisi : " . $this->sisi1 . ", " . $this->sisi2 . ", " . $this->sisi3 . "\n";
+    echo "Luas : " . $this->hitungLuas() . "\n";
+    echo "Keliling : " . $this->hitungKeliling() . "\n";
+    echo "Jenis: " . $this->cekJenis() . "\n";
+    echo "===============================\n";
+    echo "</pre>";
+}
 }
