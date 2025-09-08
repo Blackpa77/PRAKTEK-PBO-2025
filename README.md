@@ -1,5 +1,5 @@
 ---
-title: Praktek OOP
+title: PRAKTEK PBO 2025
 emoji: 👀
 colorFrom: blue
 colorTo: green
