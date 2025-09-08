@@ -1,6 +1,6 @@
 <?php
 // index.php
-$nama = " Atmin Mie ayam";
+$nama = " Developer @Paundra90";
 $waktu = date("Y-m-d H:i:s");
 ?>
 <!DOCTYPE html>
@@ -41,8 +41,8 @@ $waktu = date("Y-m-d H:i:s");
                 <li><a href="home.php">Buka Halaman Home</a></li>
             </ul>
 
-            <h3>Pertemuan 3</h3>
             <ul>
+            <h3>Pertemuan 3</h3>
                 <li><a href="Latihan1.php">Buka Latihan 1</a></li>
                 <li><a href="Latihan2.php">Buka Latihan 2</a></li>
                 <li><a href="Latihan3.php">Buka Latihan 3</a></li>
