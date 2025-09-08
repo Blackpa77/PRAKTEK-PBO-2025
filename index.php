@@ -31,22 +31,22 @@ $waktu = date("Y-m-d H:i:s");
 </head>
 <body>
     <div class="container">
-        <h1>WELCOME WEBSITE PAUNDRA</h1>
-        <p>Semoga dengan adanya wesbite ini para mie ayam diseluruh dunia kesejahteraannya meningkat dan menjadi lebih baiik, SEMOGA APA YANG DISMEOGAKAN TERCAPAI <strong><?= htmlspecialchars($nama) ?></strong></p>
+        <h1>WELCOME TO WEBSITE PBO PAUNDRA</h1>
+        <p>Website ini dibuat untuk menyimpan semua latihan dan hal yang berhubungan dengan mata kuliah Praktikum Pemograman Berbasis Objek (PBO). <strong><?= htmlspecialchars($nama) ?></strong></p>
         
         <div class="box">
             <h2>🔗 Navigasi Halaman</h2>
             
             <ul>
-                <li><a href="home.php">Buka Halaman Home</a></li>
+                <li><a href="home.php">Home</a></li>
             </ul>
 
             <ul>
             <h3>Pertemuan 3</h3>
-                <li><a href="Latihan1.php">Buka Latihan 1</a></li>
-                <li><a href="Latihan2.php">Buka Latihan 2</a></li>
-                <li><a href="Latihan3.php">Buka Latihan 3</a></li>
-                <li><a href="Latihan4.php">Buka Latihan 4</a></li>
+                <li><a href="Latihan1.php">Latihan 1</a></li>
+                <li><a href="Latihan2.php">Latihan 2</a></li>
+                <li><a href="Latihan3.php">Latihan 3</a></li>
+                <li><a href="Latihan4.php">Latihan 4</a></li>
             </ul>
 
             </div>
