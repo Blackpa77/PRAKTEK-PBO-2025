@@ -51,6 +51,14 @@ $waktu = date("Y-m-d H:i:s");
                 <li><a href="objeksegitiga.php">Objek Segitiga</a></li>
             </ul>
 
+            
+            <ul>
+            <h3>Pertemuan 4</h3>
+                <li><a href="class_segitiga.php">Class Segitiga</a></li>
+                <li><a href="objeksegitiga.php">Objek Segitiga</a></li>
+            </ul>
+            
+
             </div>
         
         <div class="box">
