@@ -47,8 +47,6 @@ $waktu = date("Y-m-d H:i:s");
                 <li><a href="Latihan2.php">Latihan 2</a></li>
                 <li><a href="Latihan3.php">Latihan 3</a></li>
                 <li><a href="Latihan4.php">Latihan 4</a></li>
-                <li><a href="class_segitiga.php">Class Segitiga</a></li>
-                <li><a href="objeksegitiga.php">Objek Segitiga</a></li>
             </ul>
 
             
