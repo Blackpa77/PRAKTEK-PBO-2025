@@ -1,0 +1,34 @@
+<?php
+//  buat class akun
+class akun
+{
+  // buat property untuk class akun
+  var $username;
+  var $email;
+  var $password;
+  //Buat method untuk class akun
+  function login()
+  {
+    return "Anda berhasil login";
+  }
+  function logout()
+  {
+    return "Anda berhasil logout";
+  }
+}
+
+// buat objek dari class akun (instansiasi)
+$akun_arjun = new akun();
+$akun_maheswara = new akun();
+$akun_paundra = new akun();
+// set property
+$akun_arjun->username = "Arjun";
+$akun_arjun->email = "arjun@gmail.com";
+$akun_arjun->password = "password123";
+// tampilkan property
+echo $akun_arjun->username; //arjun
+echo "\n";
+echo $akun_arjun->email; //arjun@gmail.com
+echo "\n";
+echo $akun_arjun->password; //password123
+echo "\n";
