@@ -43,17 +43,17 @@ $waktu = date("Y-m-d H:i:s");
 
             <ul>
             <h3>Pertemuan 3 (PPBO) </h3>
-                <li><a href="Latihan1.php">Latihan 1</a></li>
-                <li><a href="Latihan2.php">Latihan 2</a></li>
-                <li><a href="Latihan3.php">Latihan 3</a></li>
-                <li><a href="Latihan4.php">Latihan 4</a></li>
+                <li><a href="/Pertemuan 3/Latihan1.php">Latihan 1</a></li>
+                <li><a href="/Pertemuan 3/Latihan2.php">Latihan 2</a></li>
+                <li><a href="/Pertemuan 3/Latihan3.php">Latihan 3</a></li>
+                <li><a href="/Pertemuan 3/Latihan4.php">Latihan 4</a></li>
             </ul>
 
             
             <ul>
             <h3>Pertemuan 4 (PBO) </h3>
-                <li><a href="class_segitiga.php">Class Segitiga</a></li>
-                <li><a href="objeksegitiga.php">Objek Segitiga</a></li>
+                <li><a href="/Pertemuan 4/class_segitiga.php">Class Segitiga</a></li>
+                <li><a href="/Pertemuan 4/objeksegitiga.php">Objek Segitiga</a></li>
             </ul>
             
 
