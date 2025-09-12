@@ -34,7 +34,6 @@ echo "\n";
 
 echo $mobil_syahrul->warna;
 echo "\n";
-
 // tampilkan method
 echo $mobil_syahrul->hidupkan_mobil();
 echo "\n";
