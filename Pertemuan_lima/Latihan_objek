@@ -24,6 +24,7 @@ $akun_maheswara = new akun();
 $akun_arjun->username = "Arjun";
 $akun_arjun->email = "arjun@gmail.com";
 $akun_arjun->password = "password123";
+
 $akun_maheswara->username = "Maheswara 80";
 $akun_maheswara->email = "maheswara80@gmail.com";
 $akun_maheswara->password = "maheswarahebat";
@@ -34,6 +35,7 @@ echo $akun_arjun->email; //arjun@gmail.com
 echo "\n";
 echo $akun_arjun->password; //password123
 echo "\n";
+
 echo $akun_maheswara->username; //Maheswara 80
 echo "\n";
 echo $akun_maheswara->email; //maheswara80@gmail.com
