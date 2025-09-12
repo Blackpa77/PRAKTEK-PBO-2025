@@ -31,7 +31,7 @@ $waktu = date("Y-m-d H:i:s");
 </head>
 <body>
     <div class="container">
-        <h1>WELCOME TO WEBSITE PBO PAUNDRA</h1>
+        <h1>WEBSITE PBO PAUNDRA 2025</h1>
         <p>Website ini dibuat untuk menyimpan semua latihan dan hal yang berhubungan dengan mata kuliah Praktikum Pemograman Berbasis Objek (PBO). <strong><?= htmlspecialchars($nama) ?></strong></p>
         
         <div class="box">
