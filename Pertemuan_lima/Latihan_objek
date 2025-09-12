@@ -19,8 +19,6 @@ class akun
 
 // buat objek dari class akun (instansiasi)
 $akun_arjun = new akun();
-$akun_maheswara = new akun();
-$akun_paundra = new akun();
 // set property
 $akun_arjun->username = "Arjun";
 $akun_arjun->email = "arjun@gmail.com";
