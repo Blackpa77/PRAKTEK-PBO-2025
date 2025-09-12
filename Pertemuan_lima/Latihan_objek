@@ -19,14 +19,24 @@ class akun
 
 // buat objek dari class akun (instansiasi)
 $akun_arjun = new akun();
+$akun_maheswara = new akun();
 // set property
 $akun_arjun->username = "Arjun";
 $akun_arjun->email = "arjun@gmail.com";
 $akun_arjun->password = "password123";
+$akun_maheswara->username = "Maheswara 80";
+$akun_maheswara->email = "maheswara80@gmail.com";
+$akun_maheswara->password = "maheswarahebat";
 // tampilkan property
 echo $akun_arjun->username; //arjun
 echo "\n";
 echo $akun_arjun->email; //arjun@gmail.com
 echo "\n";
 echo $akun_arjun->password; //password123
+echo "\n";
+echo $akun_maheswara->username; //Maheswara 80
+echo "\n";
+echo $akun_maheswara->email; //maheswara80@gmail.com
+echo "\n";
+echo $akun_maheswara->password; //maheswarahebat
 echo "\n";

@@ -59,14 +59,14 @@ $waktu = date("Y-m-d H:i:s");
             <ul>
                 <h3>Pertemuan 5 (PPBO)</h3>
                 <li><a href="/Pertemuan 5/Latihan_objek.php">Latihan 1</a></li>
-                <li><a href="/Pertemuan 5/buat_objek.php">Buat dan memanggil objek</a></li>
+                <li><a href="/Pertemuan 5/buat_objek.php">Memanggil objek</a></li>
             </ul>
             
 
             </div>
         
         <div class="box">
-            <p>Waktu server: <code><?= $waktu ?></code></p>
+            <p>Waktu server sekarang : <code><?= $waktu ?></code></p>
         </div>
 </div>
 </body>
