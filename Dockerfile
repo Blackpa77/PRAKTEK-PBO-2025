@@ -1,7 +1,6 @@
 # Gunakan official PHP image dengan Apache
 FROM php:8.2-apache
 
-# Salin SEMUA file dari direktori proyek ke direktori web server
 # Ini adalah perbaikannya: "." berarti "semua yang ada di sini"
 COPY . /var/www/html/
 
