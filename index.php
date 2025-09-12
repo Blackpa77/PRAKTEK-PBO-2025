@@ -55,6 +55,12 @@ $waktu = date("Y-m-d H:i:s");
                 <li><a href="/Pertemuan 4/class_segitiga.php">Class Segitiga</a></li>
                 <li><a href="/Pertemuan 4/objeksegitiga.php">Objek Segitiga</a></li>
             </ul>
+
+            <ul>
+                <h3>Pertemuan 5 (PPBO)</h3>
+                <li><a href="/Pertemuan 5/Latihan_objek.php">Latihan 1</a></li>
+                <li><a href="/Pertemuan 5/buat_objek.php">Buat dan memanggil objek</a></li>
+            </ul>
             
 
             </div>
