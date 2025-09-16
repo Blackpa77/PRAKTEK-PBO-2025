@@ -43,23 +43,23 @@ $waktu = date("Y-m-d H:i:s");
 
             <ul>
             <h3>Pertemuan 3 (PPBO) </h3>
-                <li><a href="/Pertemuan 3/Latihan1.php">Latihan 1</a></li>
-                <li><a href="/Pertemuan 3/Latihan2.php">Latihan 2</a></li>
-                <li><a href="/Pertemuan 3/Latihan3.php">Latihan 3</a></li>
-                <li><a href="/Pertemuan 3/Latihan4.php">Latihan 4</a></li>
+                <li><a href="/Pertemuan_tiga/Latihan1.php">Latihan 1</a></li>
+                <li><a href="/Pertemuan_tiga/Latihan2.php">Latihan 2</a></li>
+                <li><a href="/Pertemuan_tiga/Latihan3.php">Latihan 3</a></li>
+                <li><a href="/Pertemuan_tiga/Latihan4.php">Latihan 4</a></li>
             </ul>
 
             
             <ul>
             <h3>Pertemuan 4 (PBO) </h3>
-                <li><a href="/Pertemuan 4/class_segitiga.php">Class Segitiga</a></li>
-                <li><a href="/Pertemuan 4/objeksegitiga.php">Objek Segitiga</a></li>
+                <li><a href="/Pertemuan_empat/class_segitiga.php">Class Segitiga</a></li>
+                <li><a href="/Pertemuan_empat/objeksegitiga.php">Objek Segitiga</a></li>
             </ul>
 
             <ul>
                 <h3>Pertemuan 5 (PPBO)</h3>
-                <li><a href="/Pertemuan 5/Latihan_objek.php">Latihan 1</a></li>
-                <li><a href="/Pertemuan 5/buat_objek.php"> Coba Memanggil objek</a></li>
+                <li><a href="/Pertemuan_lima/Latihan_objek.php">Latihan 1</a></li>
+                <li><a href="/Pertemuan_lima/buat_objek.php"> Coba Memanggil objek</a></li>
             </ul>
             
             </div>
