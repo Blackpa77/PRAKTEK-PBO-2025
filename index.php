@@ -14,64 +14,89 @@ $waktu = date("Y-m-d H:i:s");
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --dark-bg: #1a1a2e;
-            --light-dark-bg: #2c2c54;
-            --text-primary: #e0e0e0;
-            --text-secondary: #a7a7ff;
             --accent-blue: #0abfbc;
-            --border-color: #4a4a7a;
+            --text-primary: #e0e0e0;
+            --text-secondary: #c0c0e0;
         }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: var(--dark-bg);
+            background: linear-gradient(135deg, #1a1a2e, #2c1a4d);
             color: var(--text-primary);
             margin: 0;
             padding: 40px 20px;
+            min-height: 100vh;
+            box-sizing: border-box;
         }
+
         .container {
-            max-width: 800px;
+            max-width: 850px;
             margin: 0 auto;
         }
+
         .header {
             text-align: center;
             margin-bottom: 40px;
+            animation: fadeInUp 0.8s ease-out;
         }
+
         .header h1 {
             font-size: 2.5em;
             color: #ffffff;
             font-weight: 700;
             margin-bottom: 10px;
-            letter-spacing: 1px;
+            text-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
+
         .header p {
             color: var(--text-secondary);
             font-size: 1.1em;
         }
-        .main-box {
-            background: var(--light-dark-bg);
+
+        .glass-box {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
             padding: 30px;
-            border-radius: 12px;
-            border: 1px solid var(--border-color);
+            border-radius: 16px;
             margin-bottom: 20px;
+            animation: fadeInUp 0.8s ease-out 0.2s; /* Muncul sedikit setelah header */
+            animation-fill-mode: both;
         }
+
         .nav-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 25px;
         }
+
         .nav-category h3 {
             font-size: 1.2em;
             color: var(--accent-blue);
-            border-bottom: 2px solid var(--border-color);
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
             padding-bottom: 10px;
             margin-top: 0;
             font-weight: 600;
         }
+
         .nav-category ul {
             list-style-type: none;
             padding: 0;
             margin: 0;
         }
+
         .nav-category li a {
             display: block;
             color: var(--text-secondary);
@@ -81,19 +106,26 @@ $waktu = date("Y-m-d H:i:s");
             transition: background-color 0.2s ease, color 0.2s ease;
             font-weight: 500;
         }
+
         .nav-category li a:hover {
-            background-color: rgba(74, 74, 122, 0.5);
+            background-color: rgba(10, 191, 188, 0.1);
             color: var(--accent-blue);
         }
+
         .footer {
             text-align: center;
             font-size: 0.9em;
-            color: #777;
+            color: #888;
+            margin-top: 40px;
+            animation: fadeInUp 0.8s ease-out 0.4s;
+            animation-fill-mode: both;
         }
+        
         .footer code {
-            background: var(--light-dark-bg);
+            background: rgba(0,0,0,0.2);
             padding: 3px 6px;
             border-radius: 4px;
+            color: var(--text-secondary);
         }
     </style>
 </head>
@@ -106,7 +138,7 @@ $waktu = date("Y-m-d H:i:s");
             </p>
         </div>
 
-        <div class="main-box">
+        <div class="glass-box">
             <div class="nav-grid">
                 <div class="nav-category">
                     <h3>Umum</h3>
