@@ -13,10 +13,18 @@ $waktu = date("Y-m-d H:i:s");
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --dark-bg: #1a1a2e;
+            --light-dark-bg: #2c2c54;
+            --text-primary: #e0e0e0;
+            --text-secondary: #a7a7ff;
+            --accent-blue: #0abfbc;
+            --border-color: #4a4a7a;
+        }
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #f4f7f6;
-            color: #333;
+            background-color: var(--dark-bg);
+            color: var(--text-primary);
             margin: 0;
             padding: 40px 20px;
         }
@@ -30,18 +38,20 @@ $waktu = date("Y-m-d H:i:s");
         }
         .header h1 {
             font-size: 2.5em;
-            color: #2c3e50;
+            color: #ffffff;
+            font-weight: 700;
             margin-bottom: 10px;
+            letter-spacing: 1px;
         }
         .header p {
-            color: #555;
+            color: var(--text-secondary);
             font-size: 1.1em;
         }
         .main-box {
-            background: #ffffff;
+            background: var(--light-dark-bg);
             padding: 30px;
             border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid var(--border-color);
             margin-bottom: 20px;
         }
         .nav-grid {
@@ -51,10 +61,11 @@ $waktu = date("Y-m-d H:i:s");
         }
         .nav-category h3 {
             font-size: 1.2em;
-            color: #34495e;
-            border-bottom: 2px solid #ecf0f1;
+            color: var(--accent-blue);
+            border-bottom: 2px solid var(--border-color);
             padding-bottom: 10px;
             margin-top: 0;
+            font-weight: 600;
         }
         .nav-category ul {
             list-style-type: none;
@@ -63,7 +74,7 @@ $waktu = date("Y-m-d H:i:s");
         }
         .nav-category li a {
             display: block;
-            color: #3498db;
+            color: var(--text-secondary);
             text-decoration: none;
             padding: 10px 15px;
             border-radius: 8px;
@@ -71,13 +82,18 @@ $waktu = date("Y-m-d H:i:s");
             font-weight: 500;
         }
         .nav-category li a:hover {
-            background-color: #ecf0f1;
-            color: #2980b9;
+            background-color: rgba(74, 74, 122, 0.5);
+            color: var(--accent-blue);
         }
         .footer {
             text-align: center;
             font-size: 0.9em;
             color: #777;
+        }
+        .footer code {
+            background: var(--light-dark-bg);
+            padding: 3px 6px;
+            border-radius: 4px;
         }
     </style>
 </head>
