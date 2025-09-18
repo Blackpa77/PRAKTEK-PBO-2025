@@ -301,7 +301,7 @@ $waktu = date("Y-m-d H:i:s");
 <body>
   
   <nav class="navbar" id="navbar">
-    <div class="logo">Paundra</div>
+    <div class="logo">BLackpa Website</div>
     <ul class="nav-links" id="menu">
       <li><a href="#hero" class="active">Beranda</a></li>
       <li><a href="#latihan">Daftar Latihan</a></li>
@@ -360,7 +360,7 @@ $waktu = date("Y-m-d H:i:s");
 
   <footer>
      <p>Waktu server: <code><?= $waktu ?></code></p>
-     <p>&copy; 2025 MyWebsite. Didesain ulang dengan bantuan AI.</p>
+     <p>&copy; 2025 Paundra Website. Didesain oleh Paundra, dengan bantuan asisten 2,5 pro.</p>
   </footer>
 
   <script>
