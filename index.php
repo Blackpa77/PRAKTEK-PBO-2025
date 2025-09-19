@@ -176,6 +176,19 @@ $waktu = date("Y-m-d H:i:s");
                 </div>
             </div>
         </div>
+
+                <div class="nav-category">
+                    <h3>Pertemuan 6</h3>
+                    <ul>
+                        <li><a href="/Pertemuan_enam/coba.php">coba 1</a></li>
+                        <li><a href="/Pertemuan_enam/coba_dua.php">coba 2</a></li>
+                        <li><a href="/Pertemuan_enam/coba_tiga.php">coba 3</a></li>
+                        <li><a href="/Pertemuan_enam/coba_empat.php">coba 4</a></li>
+                        <li><a href="/Pertemuan_enam/coba_lima.php">coba 5</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         
         <div class="footer">
             <p>Waktu server: <code><?= $waktu ?></code></p>
