@@ -324,50 +324,51 @@ $waktu = date("Y-m-d H:i:s");
     <section id="latihan">
         <div class="container">
             <h2 class="section-title reveal">Daftar Latihan</h2>
-            <div class="nav-grid">
-                <div class="nav-category reveal">
-                    <h3>Pertemuan 3</h3>
-                    <ul>
-                        <li><a href="/Pertemuan_tiga/Latihan1.php" target="_blank">Latihan 1</a></li>
-                        <li><a href="/Pertemuan_tiga/Latihan2.php" target="_blank">Latihan 2</a></li>
-                        <li><a href="/Pertemuan_tiga/Latihan3.php" target="_blank">Latihan 3</a></li>
-                        <li><a href="/Pertemuan_tiga/Latihan4.php" target="_blank">Latihan 4</a></li>
-                    </ul>
-                </div>
+<div class="nav-grid">
+    <div class="nav-category reveal">
+        <h3>Pertemuan 3</h3>
+        <ul>
+            <li><a href="/Pertemuan_tiga/Latihan1.php" target="_blank">Latihan 1</a></li>
+            <li><a href="/Pertemuan_tiga/Latihan2.php" target="_blank">Latihan 2</a></li>
+            <li><a href="/Pertemuan_tiga/Latihan3.php" target="_blank">Latihan 3</a></li>
+            <li><a href="/Pertemuan_tiga/Latihan4.php" target="_blank">Latihan 4</a></li>
+        </ul>
+    </div>
 
-                <div class="nav-category reveal">
-                    <h3>Pertemuan 4</h3>
-                    <ul>
-                        <li><a href="/Pertemuan_empat/class_segitiga.php" target="_blank">Class Segitiga</a></li>
-                        <li><a href="/Pertemuan_empat/objeksegitiga.php" target="_blank">Objek Segitiga</a></li>
-                    </ul>
-                </div>
+    <div class="nav-category reveal">
+        <h3>Pertemuan 4</h3>
+        <ul>
+            <li><a href="/Pertemuan_empat/class_segitiga.php" target="_blank">Class Segitiga</a></li>
+            <li><a href="/Pertemuan_empat/objeksegitiga.php" target="_blank">Objek Segitiga</a></li>
+        </ul>
+    </div>
 
-                <div class="nav-category reveal">
-                    <h3>Pertemuan 5</h3>
-                    <ul>
-                        <li><a href="/Pertemuan_lima/Latihan_objek.php" target="_blank">Latihan Objek</a></li>
-                        <li><a href="/Pertemuan_lima/buat_objek.php" target="_blank">Memanggil Objek</a></li>
-                        <li><a href="/Pertemuan_lima/Public.php" target="_blank">Public</a></li>
-                        <li><a href="/Pertemuan_lima/Protected_benar.php" target="_blank">Protected Benar</a></li>
-                        <li><a href="/Pertemuan_lima/turunan_protected_public.php" target="_blank">Turunan</a></li>
-                        <li><a href="/Pertemuan_lima/Private_salah.php" target="_blank">Private Salah</a></li>
-                        <li><a href="/Pertemuan_lima/Private_benar.php" target="_blank">Private Benar</a></li>
-                        <li><a href="/Pertemuan_lima/praktikum51.php" target="_blank">Praktikum 5.1</a></li>
-                        <li><a href="/Pertemuan_lima/praktikum52.php" target="_blank">Praktikum 5.2</a></li>
+    <div class="nav-category reveal">
+        <h3>Pertemuan 5</h3>
+        <ul>
+            <li><a href="/Pertemuan_lima/Latihan_objek.php" target="_blank">Latihan Objek</a></li>
+            <li><a href="/Pertemuan_lima/buat_objek.php" target="_blank">Memanggil Objek</a></li>
+            <li><a href="/Pertemuan_lima/Public.php" target="_blank">Public</a></li>
+            <li><a href="/Pertemuan_lima/Protected_benar.php" target="_blank">Protected Benar</a></li>
+            <li><a href="/Pertemuan_lima/turunan_protected_public.php" target="_blank">Turunan</a></li>
+            <li><a href="/Pertemuan_lima/Private_salah.php" target="_blank">Private Salah</a></li>
+            <li><a href="/Pertemuan_lima/Private_benar.php" target="_blank">Private Benar</a></li>
+            <li><a href="/Pertemuan_lima/praktikum51.php" target="_blank">Praktikum 5.1</a></li>
+            <li><a href="/Pertemuan_lima/praktikum52.php" target="_blank">Praktikum 5.2</a></li>
+        </ul>
+    </div>
 
-                <div class="nav-category reveal">
-                    <h3>Pertemuan 6</h3>
-                    <ul>
-                       <li><a href ="/Pertemuan_enam/coba.php" target="_blank">Coba</a></li>
-                       <li><a href ="/Pertemuan_enam/coba_dua.php" target="_blank">coba 2</a></li>
-                        <li><a href ="/Pertemuan_enam/coba_tiga.php" target="_blank">coba 3</a></li>
-                        <li><a href ="/Pertemuan_enam/coba_empat.php" target="_blank">coba 4</a></li>
-                        <li><a href ="/Pertemuan_enam/coba_lima.php" target="_blank">coba 5</a></li>
-                    
-                    </ul>
-                </div>
-            </div>
+    <div class="nav-category reveal">
+        <h3>Pertemuan 6</h3>
+        <ul>
+            <li><a href ="/Pertemuan_enam/coba.php" target="_blank">Coba</a></li>
+            <li><a href ="/Pertemuan_enam/coba_dua.php" target="_blank">coba 2</a></li>
+            <li><a href ="/Pertemuan_enam/coba_tiga.php" target="_blank">coba 3</a></li>
+            <li><a href ="/Pertemuan_enam/coba_empat.php" target="_blank">coba 4</a></li>
+            <li><a href ="/Pertemuan_enam/coba_lima.php" target="_blank">coba 5</a></li>
+        </ul>
+    </div>
+</div>
         </div>
     </section>
   </main>
