@@ -355,6 +355,15 @@ $waktu = date("Y-m-d H:i:s");
                         <li><a href="/Pertemuan_lima/Private_benar.php" target="_blank">Private Benar</a></li>
                         <li><a href="/Pertemuan_lima/praktikum51.php" target="_blank">Praktikum 5.1</a></li>
                         <li><a href="/Pertemuan_lima/praktikum52.php" target="_blank">Praktikum 5.2</a></li>
+
+                <div class="nav-category reveal">
+                    <h3>Pertemuan 6</h3>
+                    <ul>
+                       <li><a href ="/Pertemuan_enam/coba.php" target="_blank">Coba</a></li>
+                       <li><a href ="/Pertemuan_enam/coba_dua.php" target="_blank">coba 2</a></li>
+                        <li><a href ="/Pertemuan_enam/coba_tiga.php" target="_blank">coba 3</a></li>
+                        <li><a href ="/Pertemuan_enam/coba_empat.php" target="_blank">coba 4</a></li>
+                        <li><a href ="/Pertemuan_enam/coba_lima.php" target="_blank">coba 5</a></li>
                     
                     </ul>
                 </div>
