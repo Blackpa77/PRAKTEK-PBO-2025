@@ -351,17 +351,55 @@ $waktu = date("Y-m-d H:i:s");
                         <li><a href="/Pertemuan_lima/Public.php" target="_blank">Public</a></li>
                         <li><a href="/Pertemuan_lima/Protected_benar.php" target="_blank">Protected Benar</a></li>
                         <li><a href="/Pertemuan_lima/turunan_protected_public.php" target="_blank">Turunan</a></li>
-                        <li><a href="/Pertemuan_lima/praktikum51.php" target="_blank"> Latihan Praktikum 5.1</a></li>
-                        <li><a href="/Pertemuan_lima/praktikum52.php" target="_blank"> Latihan Praktikum 5.2</a></li>
-                        
+                        <li><a href="/Pertemuan_lima/Private_salah.php" target="_blank">Private Salah</a></li>
+                        <li><a href="/Pertemuan_lima/Private_benar.php" target="_blank">Private Benar</a></li>
+                        <li><a href="/Pertemuan_lima/praktikum51.php" target="_blank">Praktikum 5.1</a></li>
+                        <li><a href="/Pertemuan_lima/praktikum52.php" target="_blank">Praktikum 5.2</a></li>
+                    
                     </ul>
                 </div>
             </div>
         </div>
-        
-        <div class="footer">
-            <p>Waktu server: <code><?= $waktu ?></code></p>
-        </div>
-    </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>Waktu server: <code><?= $waktu ?></code></p>
+  </footer>
+
+  <script>
+      // --- SCRIPT UNTUK NAVBAR SCROLLED ---
+      const navbar = document.getElementById('navbar');
+      window.onscroll = function() {
+          if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+              navbar.classList.add('scrolled');
+          } else {
+              navbar.classList.remove('scrolled');
+          }
+      };
+
+      // --- SCRIPT UNTUK MOBILE MENU (HAMBURGER) ---
+      const toggleBtn = document.getElementById('toggleBtn');
+      const menu = document.getElementById('menu');
+      toggleBtn.addEventListener('click', () => {
+          menu.classList.toggle('active');
+      });
+
+      // --- SCRIPT UNTUK ANIMASI REVEAL ON SCROLL ---
+      const revealElements = document.querySelectorAll('.reveal');
+      const revealOnScroll = () => {
+          const windowHeight = window.innerHeight;
+          for (let i = 0; i < revealElements.length; i++) {
+              const elementTop = revealElements[i].getBoundingClientRect().top;
+              const elementVisible = 150; // Jarak dari bawah layar sebelum elemen muncul
+              if (elementTop < windowHeight - elementVisible) {
+                  revealElements[i].classList.add('visible');
+              }
+          }
+      };
+      window.addEventListener('scroll', revealOnScroll);
+      revealOnScroll(); // Menjalankan fungsi sekali saat halaman dimuat
+  </script>
+
 </body>
 </html>
