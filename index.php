@@ -351,6 +351,9 @@ $waktu = date("Y-m-d H:i:s");
                         <li><a href="/Pertemuan_lima/Public.php" target="_blank">Public</a></li>
                         <li><a href="/Pertemuan_lima/Protected_benar.php" target="_blank">Protected Benar</a></li>
                         <li><a href="/Pertemuan_lima/turunan_protected_public.php" target="_blank">Turunan</a></li>
+                        <li><a href="/Pertemuan_lima/praktikum51.php" target="_blank"> Latihan Praktikum 5.1</a></li>
+                        <li><a href="/Pertemuan_lima/praktikum52.php" target="_blank"> Latihan Praktikum 5.2</a></li>
+                        
                     </ul>
                 </div>
             </div>
