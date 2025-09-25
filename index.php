@@ -366,8 +366,11 @@ $waktu = date("Y-m-d H:i:s");
             <li><a href ="/Pertemuan_enam/coba_tiga.php" target="_blank">coba 3</a></li>
             <li><a href ="/Pertemuan_enam/coba_empat.php" target="_blank">coba 4</a></li>
             <li><a href ="/Pertemuan_enam/coba_lima.php" target="_blank">coba 5</a></li>
+            <li><a href ="/Pertemuan_enam/LatihanP6.php" target="_blank">Latihan P6</a></li>
         </ul>
     </div>
+
+    
 </div>
         </div>
     </section>
