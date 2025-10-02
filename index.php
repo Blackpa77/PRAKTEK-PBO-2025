@@ -370,18 +370,28 @@ $waktu = date("Y-m-d H:i:s");
         </ul>
     </div>
 
-    
+    <div class="nav-category reveal">
+           <h3>Pertemuan 7 Latihan</h3>
+        <ul>
+            <li>
+                <a href="Pertemuan_7/public/" target="_blank">
+                    Buka Aplikasi Perpustakaan Digital
+                </a>
+            </li>
+        </ul>
+    </div>
+
 </div>
         </div>
     </section>
   </main>
-  
+
   <footer>
     <p>Waktu server: <code><?= $waktu ?></code></p>
   </footer>
 
   <script>
-      // --- SCRIPT UNTUK NAVBAR SCROLLED ---
+
       const navbar = document.getElementById('navbar');
       window.onscroll = function() {
           if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
@@ -391,7 +401,7 @@ $waktu = date("Y-m-d H:i:s");
           }
       };
 
-      // --- SCRIPT UNTUK MOBILE MENU (HAMBURGER) ---
+
       const toggleBtn = document.getElementById('toggleBtn');
       const menu = document.getElementById('menu');
       toggleBtn.addEventListener('click', () => {
@@ -404,14 +414,14 @@ $waktu = date("Y-m-d H:i:s");
           const windowHeight = window.innerHeight;
           for (let i = 0; i < revealElements.length; i++) {
               const elementTop = revealElements[i].getBoundingClientRect().top;
-              const elementVisible = 150; // Jarak dari bawah layar sebelum elemen muncul
+              const elementVisible = 150; 
               if (elementTop < windowHeight - elementVisible) {
                   revealElements[i].classList.add('visible');
               }
           }
       };
       window.addEventListener('scroll', revealOnScroll);
-      revealOnScroll(); // Menjalankan fungsi sekali saat halaman dimuat
+      revealOnScroll(); 
   </script>
 
 </body>
