@@ -374,7 +374,7 @@ $waktu = date("Y-m-d H:i:s");
            <h3>Pertemuan 7 Latihan</h3>
         <ul>
             <li>
-                <a href="Pertemuan_Tujuh_Latihan/public/" target="_blank">
+                <a href="Pertemuan_Tujuh_Latihan/public/app.php" target="_blank">
                     Buka Aplikasi Perpustakaan Digital
                 </a>
             </li>
