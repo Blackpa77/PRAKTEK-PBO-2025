@@ -1,13 +1,19 @@
 <?php
+// =================================================================
+// BAGIAN CONTROLLER (Logika Aplikasi)
+// =================================================================
 
-session_start();
+// KESALAHAN ADA DI SINI: Autoloader harus dimuat SEBELUM session dimulai.
+// Muat semua definisi class ("buku panduan") terlebih dahulu
 require_once __DIR__ . '/../autoload.php';
+// Baru mulai session, yang akan secara otomatis me-unserialize objek
+session_start();
 
 use Models\Book;
 use Models\Movie;
 use Core\Library;
 
-
+// Inisialisasi Library di session jika belum ada
 if (!isset($_SESSION['library'])) {
     $_SESSION['library'] = new Library();
 }
@@ -27,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
         $newItem = new Movie($title, $year);
         $library->addItem($newItem);
     }
-    header("Location: app.php"); 
+    header("Location: app.php"); // Redirect untuk mencegah resubmit form
     exit;
 }
 
@@ -35,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
 if (isset($_GET['action']) && $_GET['action'] === 'delete' && isset($_GET['id'])) {
     $id = $_GET['id'];
     $library->deleteItem($id);
-    header("Location: app.php");
+    header("Location: app.php"); // Redirect
     exit;
 }
 
@@ -143,7 +149,7 @@ if (isset($_GET['action']) && $_GET['action'] === 'delete' && isset($_GET['id'])
                 yearInput.required = true;
             }
         }
-       
+        // Panggil saat halaman dimuat untuk memastikan field yang benar tampil
         toggleFields();
     </script>
 
