@@ -1,17 +1,19 @@
 <?php
-// PERBAIKAN: session_start() harus dipanggil paling awal
-session_start();
-
 require_once __DIR__ . '/../autoload.php';
+session_start();
 
 use Models\Book;
 use Models\Movie;
 use Core\Library;
 use Interfaces\LoggerInterface;
-use Models\Media; // PERBAIKAN: Tambahkan 'use' untuk Media
+use Models\Media;
+
+// =================================================================
+// CONTROLLER
+// =================================================================
 
 $logger = new class implements LoggerInterface {
-    public function log(string $message): void { /* logika bisa ditambahkan di sini */ }
+    public function log(string $message): void { /* Logika bisa ditambahkan di sini */ }
 };
 
 if (!isset($_SESSION['library'])) {
@@ -21,11 +23,11 @@ $library = $_SESSION['library'];
 
 // Fungsi untuk demonstrasi Polimorfisme
 function cetakDetailMedia(Media $media): string {
-    return htmlspecialchars($media->getDetails()) . 
+    return htmlspecialchars($media->getDetails()) .
            " | Tipe: " . htmlspecialchars($media::MEDIA_TYPE);
 }
 
-// Logika Controller untuk tambah/hapus
+// Logika Tambah Item dengan Notifikasi
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
     $title = htmlspecialchars($_POST['title']);
     if ($_POST['type'] === 'book' && !empty($_POST['author'])) {
@@ -39,12 +41,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
     exit;
 }
 
+// Logika Hapus Item dengan Notifikasi
 if (isset($_GET['action']) && $_GET['action'] === 'delete' && isset($_GET['id'])) {
     $library->deleteItem($_GET['id']);
     $_SESSION['message'] = "Item berhasil dihapus!";
     header("Location: app.php");
     exit;
 }
+
+// =================================================================
+// VIEW (Sisa kode tidak berubah)
+// =================================================================
 ?>
 <!DOCTYPE html>
 <html lang="id">
