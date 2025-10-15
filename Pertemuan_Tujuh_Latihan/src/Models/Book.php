@@ -1,15 +1,23 @@
 <?php
 namespace Models;
-// Konsep: Inheritance (extends), parent::
+
 class Book extends Media {
-    protected string $author;
-    const MEDIA_TYPE = 'Book'; // Override konstanta
+    private string $author;
+    
+
+    const MEDIA_TYPE = 'Buku';
 
     public function __construct(string $title, string $author) {
-        parent::__construct($title); // Memanggil constructor parent
+        parent::__construct($title);
         $this->author = $author;
     }
+
     public function getDetails(): string {
-        return "Buku: '{$this->title}' oleh {$this->author}";
+        return "Buku: '{$this->getTitle()}' oleh {$this->getAuthor()}";
+    }
+
+
+    public function getAuthor(): string {
+        return $this->author;
     }
 }

@@ -1,7 +1,7 @@
 # Gunakan official PHP image dengan Apache
 FROM php:8.2-apache
 
-# Ini adalah perbaikannya: "." berarti "semua yang ada di sini"
+# Ini a
 COPY . /var/www/html/
 
 # (Opsional) Tambahkan ekstensi PHP jika diperlukan

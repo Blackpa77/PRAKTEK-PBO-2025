@@ -1,6 +1,6 @@
 <?php
 namespace Interfaces;
-// Konsep: Polymorphism (Interface)
-interface Loggable {
+
+interface LoggerInterface {
     public function log(string $message): void;
 }

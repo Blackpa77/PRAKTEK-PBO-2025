@@ -2,18 +2,19 @@
 namespace Core;
 
 use Models\Media;
-use Traits\HasTimestamp;
+use Interfaces\LoggerInterface;
+use Exceptions\ItemNotFoundException;
 
+// PERBAIKAN: Tambahkan 'implements \IteratorAggregate'
 final class Library implements \IteratorAggregate {
-    use HasTimestamp;
     private array $collection = [];
+    private LoggerInterface $logger;
 
-    public function __construct() {
-        $this->initializeTimestamp();
+    public function __construct(LoggerInterface $logger) {
+        $this->logger = $logger;
     }
 
     public function addItem(Media $item): void {
-        // ID sekarang dibuat berdasarkan timestamp agar unik
         $id = time() . rand(100, 999);
         $this->collection[$id] = $item;
     }
@@ -28,7 +29,27 @@ final class Library implements \IteratorAggregate {
         return $this->collection;
     }
 
+    // PERBAIKAN: Tambahkan method getIterator() yang wajib ada karena implements IteratorAggregate
     public function getIterator(): \ArrayIterator {
         return new \ArrayIterator($this->collection);
+    }
+    
+    public function __toString(): string {
+        return "Perpustakaan ini memiliki " . count($this->collection) . " item.";
+    }
+    
+    public function __clone() {
+        $this->logger->log("Sebuah library baru telah di-clone!");
+        $this->collection = [];
+    }
+
+    public function __sleep(): array {
+        return ['collection'];
+    }
+
+    public function __wakeup(): void {
+        $this->logger = new class implements \Interfaces\LoggerInterface {
+            public function log(string $message): void { /* logger kosong untuk objek hasil restore */ }
+        };
     }
 }
