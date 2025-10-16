@@ -23,10 +23,15 @@ $library = $_SESSION['library'];
 
 // Fungsi untuk demonstrasi Polimorfisme
 function cetakDetailMedia(Media $media): string {
-    return htmlspecialchars($media->getDetails()) .
-           " | Tipe: " . htmlspecialchars($media::MEDIA_TYPE);
+    $details = htmlspecialchars($media->getDetails());
+    $class = get_class($media);
+    if (defined($class . '::MEDIA_TYPE')) {
+        $type = constant($class . '::MEDIA_TYPE');
+    } else {
+        $type = 'Unknown';
+    }
+    return $details . " | Tipe: " . htmlspecialchars($type);
 }
-
 // Logika Tambah Item dengan Notifikasi
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
     $title = htmlspecialchars($_POST['title']);
@@ -50,7 +55,7 @@ if (isset($_GET['action']) && $_GET['action'] === 'delete' && isset($_GET['id'])
 }
 
 // =================================================================
-// VIEW (Sisa kode tidak berubah)
+// VIEW
 // =================================================================
 ?>
 <!DOCTYPE html>
@@ -82,14 +87,17 @@ if (isset($_GET['action']) && $_GET['action'] === 'delete' && isset($_GET['id'])
     </style>
 </head>
 <body>
+
     <div class="container">
         <h1>📚 Perpustakaan Digital</h1>
+
         <?php
         if (isset($_SESSION['message'])) {
             echo '<div class="notification">' . $_SESSION['message'] . '</div>';
             unset($_SESSION['message']);
         }
         ?>
+
         <div class="form-section">
             <h2>Tambah Koleksi Baru</h2>
             <form action="app.php" method="POST">
@@ -115,13 +123,14 @@ if (isset($_GET['action']) && $_GET['action'] === 'delete' && isset($_GET['id'])
                 <button type="submit" name="submit" class="btn">Simpan ke Koleksi</button>
             </form>
         </div>
+
         <div class="collection-section">
             <h2>Koleksi Saat Ini</h2>
             <div class="collection-grid">
                 <?php if (empty($library->getCollection())): ?>
                     <p>Koleksi masih kosong.</p>
                 <?php else: ?>
-                    <?php foreach ($library->getCollection() as $id => $item): ?>
+                    <?php foreach ($library as $id => $item): ?>
                         <div class="item-card">
                             <h3><?= cetakDetailMedia($item) ?></h3>
                             <p><?= htmlspecialchars($item->getCopyright()) ?></p>
@@ -131,7 +140,29 @@ if (isset($_GET['action']) && $_GET['action'] === 'delete' && isset($_GET['id'])
                 <?php endif; ?>
             </div>
         </div>
+        
+        <div class="info-section">
+            <h3>Informasi Tambahan & Demonstrasi Konsep</h3>
+            <p>Total objek media yang pernah dibuat sesi ini: <?= Models\Media::getObjectCount() ?></p>
+            <?php
+                // Demonstrasi Serialization & Cloning
+                $serialized = serialize($library);
+                $unserializedLibrary = unserialize($serialized);
+                echo "<p>Hasil Unserialize (dari __toString): " . $unserializedLibrary . "</p>";
+
+                $clonedLibrary = clone $library;
+                
+                // Demonstrasi Reflection
+                echo "<h4>Analisis Class 'Library' via Reflection:</h4>";
+                $reflection = new \ReflectionClass(Library::class);
+                echo "<ul>";
+                echo "<li>Class Library adalah final? " . ($reflection->isFinal() ? 'Ya' : 'Tidak') . "</li>";
+                echo "<li>Class Library memiliki method __clone? " . ($reflection->hasMethod('__clone') ? 'Ya' : 'Tidak') . "</li>";
+                echo "</ul>";
+            ?>
+        </div>
     </div>
+
     <script>
         function toggleFields() {
             const type = document.getElementById('type').value;
@@ -139,6 +170,7 @@ if (isset($_GET['action']) && $_GET['action'] === 'delete' && isset($_GET['id'])
             const yearField = document.getElementById('year-field');
             const authorInput = document.getElementById('author');
             const yearInput = document.getElementById('year');
+
             if (type === 'book') {
                 authorField.style.display = 'block';
                 yearField.style.display = 'none';
